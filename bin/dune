@@ -1,0 +1,4 @@
+(executable
+ (public_name dodilanne_dev)
+ (name main)
+ (libraries dream))
