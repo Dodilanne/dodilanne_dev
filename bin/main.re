@@ -2,10 +2,18 @@ open Tyxml;
 
 let greet = () =>
   <html>
-    <head> <title> "dodilanne.dev" </title> </head>
+    <head>
+      <title> "dodilanne.dev" </title>
+      <link rel="stylesheet" href="public/style.css" />
+    </head>
     <body>
-      <h1> "Welcome to my web" <button onclick="console.log('click!')"> "site" </button> </h1>
-      <img src="/public/spritesheet.png" alt="lilipa" style="height: 2rem;" />
+      <h1>
+        "Welcome to my web"
+        <button onclick="console.log('click!')"> "site" </button>
+      </h1>
+      <div className="window">
+        <img src="/public/spritesheetv2.png" alt="lilipa" />
+      </div>
     </body>
   </html>;
 
