@@ -19,6 +19,11 @@ html {
   box-sizing: border-box;
 }
 
+h1 {
+  text-align: center;
+  font-size: 3.2rem;
+}
+
 @media (max-width: 600px) {
   html {
     font-size: 56%;
@@ -34,22 +39,23 @@ html {
 
 body {
   font-size: 1.8rem;
-  background: var(--background);
+  background: dimgray;
   color: var(--foreground);
   font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
   font-weight: normal;
+  padding: 0.8rem;
+  min-height: 100vh;
+  display: flex;
+  position: relative;
 }
 
 main {
-  margin: 0 auto;
+  background: var(--background);
   width: 100%;
-  padding: 0 1rem;
-  max-width: 76rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
 }
 
 .window {
