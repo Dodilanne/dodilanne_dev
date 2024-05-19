@@ -113,6 +113,18 @@ body.loaded:not(.sit) button {
   transition: color 5s linear 1s;
 }
 
+body.loaded:not(.sit) button:focus-visible {
+  text-shadow: 0 0 1em orange;
+}
+
+body.loaded:not(.sit) button:hover {
+  text-shadow: 0 0 1em orange;
+}
+
 main:has(h1 button:hover) .window {
+  transform: scale(1);
+}
+
+main:has(h1 button:focus-visible) .window {
   transform: scale(1);
 }
