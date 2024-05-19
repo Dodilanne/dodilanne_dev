@@ -7,13 +7,20 @@ let greet = () =>
       <link rel="stylesheet" href="public/style.css" />
     </head>
     <body>
-      <h1>
-        "Welcome to my web"
-        <button onclick="console.log('click!')"> "site" </button>
-      </h1>
-      <div className="window">
-        <img src="/public/spritesheetv2.png" alt="lilipa" />
-      </div>
+      <main>
+        <h1>
+          <span> "welcome to my web" </span>
+          <button onclick="document.body.classList.add('sit')"> "sit" </button>
+          <span> "e" </span>
+        </h1>
+        <div className="window">
+          <img
+            onload="document.body.classList.add('loaded')"
+            src="/public/spritesheet.png"
+            alt="lilipa"
+          />
+        </div>
+      </main>
     </body>
   </html>;
 
