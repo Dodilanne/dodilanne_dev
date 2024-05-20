@@ -11,7 +11,3 @@ So I set out to build this second, much _simpler_ version of the site using almo
 
 Even the sprite animator which used to be [a mess](https://github.com/Dodilanne/personal-website/blob/main/src/components/animator.tsx) of useStates and useMemos is now driven by simple css keyframe animations
 (You can see it in action by pressing <kbd>shift</kbd> + <kbd>D</kbd> while viewing the website).
-
-### Note
-
-I could have used a static index.html file to make the setup even simpler, but I was dying to try out the Reason OCaml syntax on a web project...

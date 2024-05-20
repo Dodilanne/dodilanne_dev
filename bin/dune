@@ -1,5 +1,0 @@
-(executable
- (public_name dodilanne_dev)
- (name main)
- (libraries dream tyxml lib)
- (preprocess (pps lwt_ppx tyxml-jsx)))
