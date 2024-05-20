@@ -1,6 +1,6 @@
 open Tyxml;
 
-let layout = children => {
+let layout = (children: list(Html.elt([< Html_types.flow5]))) => {
   <html lang="en">
     <head>
       <meta charset="UTF-8" />
@@ -8,7 +8,15 @@ let layout = children => {
       <title> "dodilanne.dev" </title>
       <link rel="stylesheet" href="public/style.css" />
     </head>
-    <body> ...children </body>
+    <body>
+      ...{
+           children
+           @ [
+             <script src="public/confetti.js" defer="defer" />,
+             <script src="public/main.js" defer="defer" />,
+           ]
+         }
+    </body>
   </html>;
 };
 
