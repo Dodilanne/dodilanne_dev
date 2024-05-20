@@ -1,4 +1,4 @@
-const img = document.querySelector("img");
+const img = document.querySelector("main img");
 if (img) {
   img.addEventListener("animationend", event => {
     if (event.animationName === "sit" && typeof confetti === "function") {
