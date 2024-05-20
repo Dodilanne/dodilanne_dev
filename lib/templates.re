@@ -16,6 +16,12 @@ let header = () => {
   </header>;
 };
 
+let footer = () => {
+  <footer>
+    <small> "made with" <strong> "out" </strong> " react.js" </small>
+  </footer>;
+};
+
 let layout = (children: list(Html.elt([< Html_types.flow5]))) => {
   <html lang="en">
     <head>
@@ -30,6 +36,7 @@ let layout = (children: list(Html.elt([< Html_types.flow5]))) => {
            [header()]
            @ children
            @ [
+             footer(),
              <script src="public/confetti.js" defer="defer" />,
              <script src="public/main.js" defer="defer" />,
            ]

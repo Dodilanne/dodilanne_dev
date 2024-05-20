@@ -24,12 +24,6 @@ h1 {
   font-size: 3.2rem;
 }
 
-@media (max-width: 600px) {
-  html {
-    font-size: 56%;
-  }
-}
-
 @media (prefers-color-scheme: dark) {
   :root {
     --background: black;
@@ -78,6 +72,11 @@ header a img {
   object-fit: contain;
 }
 
+footer {
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
 body {
   font-size: 1.8rem;
   background: var(--background);
@@ -92,8 +91,16 @@ body {
 }
 
 @media (min-width: 600px) {
+  html {
+    font-size: 56%;
+  }
+
   body {
     padding: 0 3rem;
+  }
+
+  footer {
+    padding: 3rem;
   }
 }
 
