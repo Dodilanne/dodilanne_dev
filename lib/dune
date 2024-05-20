@@ -1,0 +1,4 @@
+(library
+ (name lib)
+ (libraries dream tyxml)
+ (preprocess (pps lwt_ppx tyxml-jsx)))
