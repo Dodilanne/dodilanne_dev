@@ -5,13 +5,12 @@
 }
 
 :root {
-  /* Spritesheet width */
-  --ssw: 12;
-  /* Spritesheet height */
-  --ssh: 1;
-  --step: calc(100% / var(--ssw));
+  --spritesheetwidth: 12;
+  --spritesheetheight: 1;
+  --step: calc(100% / var(--spritesheetwidth));
   --background: white;
   --foreground: black;
+  --primary: darkorange;
 }
 
 html {
@@ -51,7 +50,7 @@ header a:has(svg) {
 
 header a:has(svg):hover {
   border-radius: 100%;
-  box-shadow: 0 0 2em orange;
+  box-shadow: 0 0 2em var(--primary);
 }
 
 header a svg {
@@ -61,8 +60,8 @@ header a svg {
 }
 
 header a:hover {
-  text-shadow: 0 0 2em orange;
-  color: orange;
+  text-shadow: 0 0 2em var(--primary);
+  color: var(--primary);
 }
 
 header a img {
@@ -125,7 +124,7 @@ main {
 }
 
 body.debug .window {
-  border: solid 1px orange;
+  border: solid 1px var(--primary);
   overflow: visible;
 }
 
@@ -134,7 +133,7 @@ body:has(.button:focus-within) .window {
 }
 
 main img {
-  height: calc(100% * var(--ssh));
+  height: calc(100% * var(--spritesheetheight));
   animation: idle 0.8s steps(4, end) infinite;
 }
 
@@ -166,13 +165,13 @@ button {
 
 .button:not(:focus-within) {
   cursor: pointer;
-  color: orange;
+  color: var(--primary);
   transition: color 5s linear 1s;
 }
 
 .button:focus-visible,
 .button:hover {
-  text-shadow: 0 0 1em orange;
+  text-shadow: 0 0 1em var(--primary);
 }
 
 main:has(h1 .button:hover) .window,
