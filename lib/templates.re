@@ -4,7 +4,7 @@ let header = () => {
   <header>
     <a href="/"> <img src="public/favicon.ico" alt="dodi" /> "dodi" </a>
     <a
-      href="https://github.com/Dodilanne"
+      href="https://github.com/Dodilanne/dodilanne_dev"
       target="_blank"
       rel="noopener noreferrer">
       <svg width="98" height="96" viewBox="0 0 98 96" fill="currentColor">
