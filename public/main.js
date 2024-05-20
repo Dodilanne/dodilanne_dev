@@ -18,3 +18,9 @@ if (img) {
     }
   });
 }
+
+window.addEventListener("keydown", event => {
+  if (event.key === "D") {
+    document.body.classList.toggle("debug");
+  }
+});

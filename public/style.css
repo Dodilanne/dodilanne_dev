@@ -66,6 +66,11 @@ main {
   z-index: 1;
 }
 
+body.debug .window {
+  border: solid 1px orange;
+  overflow: visible;
+}
+
 body:has(.button:focus-within) .window {
   transform: scale(1);
 }
