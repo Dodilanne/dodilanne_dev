@@ -39,18 +39,16 @@ h1 {
 
 body {
   font-size: 1.8rem;
-  background: dimgray;
+  background: var(--background);
   color: var(--foreground);
   font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
   font-weight: normal;
-  padding: 0.8rem;
   min-height: 100vh;
   display: flex;
   position: relative;
 }
 
 main {
-  background: var(--background);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -102,29 +100,29 @@ body.loaded.sit img {
   }
 }
 
-button {
+a {
   all: unset;
   transition: none;
 }
 
-body.loaded:not(.sit) button {
+body.loaded:not(.sit) .button {
   cursor: pointer;
   color: orange;
   transition: color 5s linear 1s;
 }
 
-body.loaded:not(.sit) button:focus-visible {
+body.loaded:not(.sit) .button:focus-visible {
   text-shadow: 0 0 1em orange;
 }
 
-body.loaded:not(.sit) button:hover {
+body.loaded:not(.sit) .button:hover {
   text-shadow: 0 0 1em orange;
 }
 
-main:has(h1 button:hover) .window {
+main:has(h1 .button:hover) .window {
   transform: scale(1);
 }
 
-main:has(h1 button:focus-visible) .window {
+main:has(h1 .button:focus-visible) .window {
   transform: scale(1);
 }
