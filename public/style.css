@@ -169,12 +169,20 @@ button {
   transition: color 5s linear 1s;
 }
 
-.button:focus-visible,
-.button:hover {
+.button:focus-visible {
   text-shadow: 0 0 1em var(--primary);
 }
 
-main:has(h1 .button:hover) .window,
 main:has(h1 .button:focus-visible) .window {
   transform: scale(1);
+}
+
+@media (hover: hover) {
+  .button:hover {
+    text-shadow: 0 0 1em var(--primary);
+  }
+
+  main:has(h1 .button:hover) .window {
+    transform: scale(1);
+  }
 }
